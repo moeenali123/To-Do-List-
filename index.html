@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .todo-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .todo-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .todo-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .todo-input input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .todo-input button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .todo-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: white;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .todo-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .todo-item.completed {
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+        .edit-btn, .dlt-btn{
+            padding: 8px 16px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .edit-btn{
+            background-color: rgb(183, 183, 1);
+        }
+        .dlt-btn{
+            background-color: red;
+        }
+        .update-btn{
+            display: flex;
+            gap: 10px;
+        }
+        
+
+    </style>
+
+    <div class="todo-container">
+        <div class="todo-header">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="todo-input">
+            <input type="text" class="inputArea" placeholder="Add a new task...">
+            <button class="add-btn">Add</button>
+        </div>
+        <ul class="todo-list">
+            <!-- <li class="todo-item">
+                <div >
+                    <input type="checkbox">
+                    <span class="inputfield">Sample task 1</span>
+                </div>
+                <div class="update-btn">
+                    <button class="edit-btn">Edit</button>
+                    <button class="dlt-btn">Delete</button>
+                </div>
+            </li>
+
+        }); -->
+        <p style="text-align: center; color: #666;">Add a task to get started!</p>        
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
